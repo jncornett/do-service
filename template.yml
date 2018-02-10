@@ -131,4 +131,6 @@ Resources:
   #                 type: "mock"
 
 Outputs:
-  UserPoolId: {Ref: CognitoUserPool}
+  UserPoolId:
+    Description: Service user pool ID
+    Value: {Ref: CognitoUserPool}
