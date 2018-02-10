@@ -1,0 +1,6 @@
+rm -rf ./dist
+mkdir -p ./dist
+cp -v index.js ./dist
+cp -rv lib ./dist/lib
+cp -rv node_modules ./dist/node_modules
+

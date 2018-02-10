@@ -1,2 +1,4 @@
 /build/
 processed-template.yml
+/dist/
+/node_modules/

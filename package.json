@@ -6,6 +6,10 @@
   "author": "Joel Cornett <joecorne@amazon.com>",
   "license": "MIT",
   "scripts": {
-    "release": "mkdir -p build && cp index.js build"
+    "release": "bash ./bin/build-release"
+  },
+  "dependencies": {
+    "apollo-server-lambda": "^1.3.2",
+    "graphql": "^0.13.0"
   }
 }

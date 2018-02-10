@@ -5,7 +5,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: ./build
+      CodeUri: ./dist
       Events:
         GraphQl:
           Type: Api
