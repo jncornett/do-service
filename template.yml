@@ -12,13 +12,13 @@ Resources:
           Properties:
             Path: /graphql
             Method: GET
-            RestApiId: !Ref: GraphQlApi
+            RestApiId: {Ref: GraphQlApi}
         GraphQlPost:
           Type: Api
           Properties:
             Path: /graphql
             Method: POST
-            RestApiId: !Ref: GraphQlApi
+            RestApiId: {Ref: GraphQlApi}
 
   CognitoUserPool:
     Type: AWS::Cognito::UserPool
@@ -30,7 +30,7 @@ Resources:
     Properties:
       ClientName: DoApp
       GenerateSecret: false
-      UserPoolId: !Ref: CognitorUserPool
+      UserPoolId: {Ref: CognitorUserPool}
 
   GraphQlApi:
     Type: AWS::Serverless::Api
