@@ -55,7 +55,7 @@ Resources:
               x-amazon-apigateway-authtype: "cognito_user_pools"
               x-amazon-apigateway-authorizer:
                 providerARNS:
-                - !Sub: ${CognitoUserPool.Arn}
+                - Fn::Sub: ${CognitoUserPool.Arn}
                 type: "cognito_user_pools"
           paths:
             /graphql:
@@ -79,7 +79,7 @@ Resources:
                       responseParameters:
                         method.response.header.Access-Control-Allow-Origin: "'*'"
                   uri:
-                    !Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-3-31/functions/${ApiEndpointFunction.Arn}/invocations
+                    Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-3-31/functions/${ApiEndpointFunction.Arn}/invocations
                   passthroughBehavior: "when_no_templates"
                   httpMethod: "POST"
                   contentHandling: "CONVERT_TO_TEXT"
@@ -104,7 +104,7 @@ Resources:
                       responseParameters:
                         method.response.header.Access-Control-Allow-Origin: "'*'"
                   uri:
-                    !Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-3-31/functions/${ApiEndpointFunction.Arn}/invocations
+                    Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-3-31/functions/${ApiEndpointFunction.Arn}/invocations
                   passthroughBehavior: "when_no_templates"
                   httpMethod: "POST"
                   contentHandling: "CONVERT_TO_TEXT"
