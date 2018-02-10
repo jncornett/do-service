@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:jncornett/do-service.git",
   "author": "Joel Cornett <joecorne@amazon.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "release": "mkdir -p build && cp template.yml index.js build"
+  }
 }
