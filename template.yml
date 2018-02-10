@@ -5,10 +5,10 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: ./
+      CodeUri: ./build
       Events:
-        Api:
+        GraphQl:
           Type: Api
           Properties:
-            Path: /api
+            Path: /graphql
             Method: GET
