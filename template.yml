@@ -25,13 +25,6 @@ Resources:
     Properties:
       UserPoolName: DoUserPool
 
-  CognitoUserPoolClient:
-    Type: AWS::Cognito::UserPoolClient
-    Properties:
-      ClientName: DoApp
-      GenerateSecret: false
-      UserPoolId: {Ref: CognitorUserPool}
-
   GraphQlApi:
     Type: AWS::Serverless::Api
     Properties:
