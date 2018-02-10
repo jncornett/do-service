@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "apollo-server-lambda": "^1.3.2",
-    "graphql": "^0.13.0"
+    "graphql": "0.12.x",
+    "graphql-tools": "^2.20.2"
   }
 }
