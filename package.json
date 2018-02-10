@@ -1,0 +1,8 @@
+{
+  "name": "do-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jncornett/do-service.git",
+  "author": "Joel Cornett <joecorne@amazon.com>",
+  "license": "MIT"
+}
