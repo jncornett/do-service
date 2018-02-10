@@ -1,4 +1,4 @@
 exports.handler = function(event, context, callback) {
-  console.log(arguments)
+  console.log(JSON.stringify(event, null, 2))
   callback(null, {a: "result"})
 }
