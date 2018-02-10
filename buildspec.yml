@@ -9,5 +9,7 @@ phases:
     - yarn release
 
 artifacts:
+  type: zip
   files:
-  - "build/**/*"
+  - "**/*"
+  base-directory: build
